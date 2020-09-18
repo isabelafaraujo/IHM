@@ -1,0 +1,62 @@
+package Formes;
+
+import java.awt.Shape;
+import java.awt.geom.*;
+import java.awt.geom.Point2D;
+
+public class Rectangle extends Forme2D {
+	private double hauteur;
+	private double largeur;
+
+	public Rectangle(Point2D p, double hauteur, double largeur) {
+		super(p);
+		this.hauteur = hauteur;
+		this.largeur = largeur;
+	}
+
+	public double perimetre() {
+		return 2. * (hauteur + largeur);
+	}
+
+	public double surface() {
+		return hauteur * largeur;
+	}
+
+	public double hauteur() {
+		return hauteur;
+	}
+
+	public double largeur() {
+		return largeur;
+	}
+
+	public void changerHauteur(double nouvelleHauteur) {
+		hauteur = nouvelleHauteur;
+	}
+
+	public void changerLargeur(double nouvelleLargeur) {
+		largeur = nouvelleLargeur;
+	}
+
+	public String toString() {
+		return super.toString() + "de hauteur " + hauteur + "et largeur " + largeur;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Shape contains(double x, double y) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
