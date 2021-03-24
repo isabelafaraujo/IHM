@@ -1,1 +1,1 @@
-Curso de Imagem e Visão
+Curso de Interação homem-maquina
